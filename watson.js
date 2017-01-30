@@ -70,10 +70,10 @@ function WatsonServices(APPID, SECRET, onReady) {
 
         // Return the list of spaces
         const body = JSON.parse(res.body);
-        console.log(body);
+        //console.log(body);
         const spaces = body.data.spaces.items;
         // console.log('Space query result %o', body.data.spaces.items);
-        console.log(`listing spaces: ${spaces}`);
+        //console.log(`listing spaces: ${spaces}`);
         cb(spaces);
       });
     },
